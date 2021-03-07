@@ -4,6 +4,6 @@ machine:
 
 deployment:
   staging:
-    branch: master
+    branch: main
     heroku: 
       appname: labcvds06
