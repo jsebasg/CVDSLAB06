@@ -23,10 +23,6 @@ public class Adivinar {
 	private ArrayList<Integer> listado = new ArrayList<Integer>(); 
 	boolean win = false; 
 	
-
-	public Adivinar(){
-	}
-
 	public void setIntento(int intento){
 		this.intento = intento; 
 	}
@@ -50,13 +46,12 @@ public class Adivinar {
 	}
 	public void guess(){
 		win =  (intento == number) ;
-		if (!listado.contains(intento)){
+		if (!listado.contains(intento) && ! win ){
 			
-			if(! win){
+			
 				listado.add(intento);
 				fail();
 				
-			}
 		}
 	}
 	public void restart(){
