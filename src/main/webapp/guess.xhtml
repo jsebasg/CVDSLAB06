@@ -9,31 +9,69 @@
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title>Document</title>
+            
+
         </h:head>
         <h:body>
+            
             <h:form id="guess_form">
-                <p:outputLabel value= "Numero a adivinar(entre 1-10) : "/>
+   
+                <center><h:body style="background-color:#990012"></h:body>
+                    <img src = "hombre.jpg" align= "right" height="500" width="500"/>  
+                    <img src = "senora.jpg" align= "left" height="500" width="550"/>
+                <p:outputLabel value= "Numero a adivinar ( entre 1-10 )   " style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  " />
                 
-                <p:outputLabel value= "#{guessBean.number}" />
+                <p:outputLabel value= "#{guessBean.number}" style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  "  />
                 <br/>
-                <p:inputText value = "#{guessBean.intento}" type="number" name="numero" min="1" max="10"/>
                 <br/>
-                <p:outputLabel value= "Estado del juego: " />
-                <p:outputLabel value= "#{guessBean.win}" />
+                <p:inputText value = "#{guessBean.intento}" type="number" name="numero" min="1" max="10" style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif "/>
                 <br/>
-                <p:outputLabel value= "Premio actual: " />
-                <p:outputLabel value= "#{guessBean.score}" />
                 <br/>
-                <p:outputLabel value= "Intentos " />
-                <p:outputLabel value= "#{guessBean.trys}" />
-
+                
+                <p:outputLabel value= "Estado del juego: " style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  " />
+                <p:outputLabel value= "#{guessBean.win}" style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  " />
+                
                 <br/>
-                <p:outputLabel value= "Listado de intentos " />
-                <p:outputLabel value= "#{guessBean.listado}" />
-
+                <br/>
+                <p:outputLabel value= "Premio actual: " style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  "/>
+                <p:outputLabel value= "$ #{guessBean.score}" style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  "/>
+                
+                <br/>
+                <br/>
+                <p:outputLabel value= "Intentos: " style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  " />
+                <p:outputLabel value= "#{guessBean.trys}" style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  "/>
+                <br/>
+                <br/>
+                
+                <p:outputLabel value= "Listado de intentos: " style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  " />
+                <br/>
+                <p:outputLabel value= "#{guessBean.listado}" style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  " />
+                
+                
+            </center>
             </h:form>
+            <center>
+            <br/>
             <p:commandButton value = "Ejecutar" update="guess_form" actionListener="#{guessBean.guess()}"></p:commandButton>
             <p:commandButton value = "Reiniciar" update="guess_form" actionListener="#{guessBean.restart()}"></p:commandButton>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <img src = "logo.jpg" align= "right" height="100" width="300"/>
+            </center>
+                
+
         </h:body>
     </html>
 

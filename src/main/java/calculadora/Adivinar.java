@@ -50,10 +50,13 @@ public class Adivinar {
 	}
 	public void guess(){
 		win =  (intento == number) ;
-		addTry();
-		if(! win){
-			listado.add(intento);
-			fail();
+		if (!listado.contains(intento)){
+			
+			if(! win){
+				listado.add(intento);
+				fail();
+				
+			}
 		}
 	}
 	public void restart(){
@@ -66,18 +69,18 @@ public class Adivinar {
 
 	}
 	public String getWin(){
-		String c = "Ganó";
-		if(! win) c = "No ha ganado";
+		String c = " ¡¡ Ganó !!";
+		if(! win) c = " No ha ganado ";
 		return c;
 	}
-	public void addTry(){
-		trys ++;
-	}
+	
 	public void fail(){
 		if (score - 10000 >= 0) score -= 10000;
+		trys ++; 
 	}
 	public void setListado(ArrayList<Integer> listado){
 		this.listado = listado;  
+		
 	}
 
 	public String getListado (){
