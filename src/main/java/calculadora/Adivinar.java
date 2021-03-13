@@ -26,9 +26,10 @@ public class Adivinar {
 	
 	public void setIntento(int intento){
 		if(intento > 10 || intento < 1 ){
-			correction = "Numero Invalido"
+			correction = "Numero Invalido";
 		}else{
-		this.intento = intento; 
+			this.intento = intento; 
+			correction = ""; 
 		}
 	}
 
