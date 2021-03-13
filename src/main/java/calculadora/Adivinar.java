@@ -19,12 +19,17 @@ public class Adivinar {
 	private int number = r.nextInt(10)+1;
 	private int score = 100000; 
 	private int intento = 0;
+	private String correction = "" ; 
 
 	private ArrayList<Integer> listado = new ArrayList<Integer>(); 
 	boolean win = false; 
 	
 	public void setIntento(int intento){
+		if(intento > 10 || intento < 1 ){
+			correction = "Numero Invalido"
+		}else{
 		this.intento = intento; 
+		}
 	}
 
 	public int getIntento(){
@@ -90,6 +95,14 @@ public class Adivinar {
 			
 		} 
 		return toReturn; 
+	}
+
+	public void setCorrection(String correction){
+		this.correction = correction; 
+	}
+
+	public String getCorrection(){
+		return correction; 
 	}
 
 	

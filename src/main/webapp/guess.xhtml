@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
     <html   xmlns="http://www.w3c.org/1999/xhtml"
             xmlns:h="http://xmlns.jcp.org/jsf/html"
             xmlns:p="http://primefaces.org/ui"
@@ -25,9 +25,9 @@
                 <br/>
                 <br/>
                 <p:inputText value = "#{guessBean.intento}" type="number" name="numero" min="1" max="10" style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif "/>
+                 <p:outputLabel value= "#{guessBean.correction}" style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  "  />
                 <br/>
                 <br/>
-                
                 <p:outputLabel value= "Estado del juego: " style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  " />
                 <p:outputLabel value= "#{guessBean.win}" style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif  ; color:white  " />
                 
