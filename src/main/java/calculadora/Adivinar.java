@@ -52,9 +52,7 @@ public class Adivinar {
 	}
 	public void guess(){
 		win =  (intento == number) ;
-		if (!listado.contains(intento) && ! win ){
-			
-			
+		if (!listado.contains(intento) && ! win && intento != 0 ){
 				listado.add(intento);
 				fail();
 				
